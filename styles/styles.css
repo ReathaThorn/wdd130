@@ -18,6 +18,7 @@ header {
 
 header h1 {
     margin: 0;
+    color: steelblue; /* Fixed for audit */
 }
 
 /* Navigation Styling */
@@ -29,7 +30,7 @@ nav {
 
 nav a {
     color: white;
-    display: inline-block;
+    display: block; /* Fixed for audit */
     padding: 10px 20px;
     text-decoration: none;
 }
