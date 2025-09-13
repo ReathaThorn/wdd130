@@ -1,91 +1,62 @@
-/* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-/* Header Styling */
-header {
-    background-color: darkblue;
-    color: white;
-    padding: 16px;
-    text-align: center;
+header, footer {
+  background: #004466;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
 
-header h1 {
-    margin: 0;
-    color: steelblue; /* Fixed for audit */
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* Navigation Styling */
-nav {
-    background-color: steelblue;
-    padding: 10px;
-    text-align: center;
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
 }
 
-nav a {
-    color: white;
-    display: block; /* Fixed for audit */
-    padding: 10px 20px;
-    text-decoration: none;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
-nav a:hover {
-    background-color: #003366;
+nav ul li a.active {
+  text-decoration: underline;
 }
 
-/* Main Content Styling */
-main {
-    max-width: 840px;
-    margin: 20px auto;
-    padding: 10px;
+#members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 10px gray;
-    display: block;
-    margin-bottom: 10px;
+.member {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  background: #f9f9f9;
 }
 
-/* Aside Styling */
-aside {
-    width: 20rem;
-    margin: 1rem auto;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+.member img {
+  max-width: 100%;
+  height: auto;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 10px gray;
-    margin-bottom: 10px;
+.list-view .member {
+  display: flex;
+  align-items: center;
+  text-align: left;
 }
 
-/* Paragraph Styling */
-p {
-    padding: 0;
-}
-
-/* Footer Styling */
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-    padding: 10px 0;
-    background-color: #ddd;
+.list-view .member img {
+  max-width: 100px;
+  margin-right: 1rem;
 }
