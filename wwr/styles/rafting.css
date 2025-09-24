@@ -3,7 +3,6 @@
   --secondary-color: darkblue;
   --light-color: #f4f4f4;
   --text-color: #333;
-  --accent-color: #ffcc00;
 }
 
 body {
@@ -28,75 +27,60 @@ header img.logo {
   height: 60px;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 15px;
+}
+
 nav a {
   color: white;
-  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
 }
 
+nav a.active,
 nav a:hover {
   text-decoration: underline;
-  color: var(--accent-color);
 }
 
 /* Hero */
 .hero {
-  position: relative;
-  text-align: left;
-}
-
-.hero img {
-  width: 100%;
-  display: block;
-}
-
-.hero article {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: url("../images/rafting-hero.jpg") no-repeat center center/cover;
   color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  max-width: 400px;
+  text-align: center;
+  padding: 4rem 2rem;
 }
 
-.hero article img {
-  float: right;
-  width: 150px;
-  margin: 0 0 1rem 1rem;
-  border-radius: 8px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-/* Main Sections */
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Sections */
 main section {
   padding: 2rem;
+  background: white;
+  margin: 1rem auto;
   max-width: 1000px;
-  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 main h2 {
-  color: var(--secondary-color);
-  margin-top: 0;
-}
-
-/* Figures */
-figure {
-  text-align: center;
-  margin: 1.5rem auto;
-}
-
-figure img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-figcaption {
-  font-size: 0.9rem;
-  color: var(--text-color);
-  margin-top: 0.5rem;
-  font-style: italic;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
 /* Footer */
@@ -111,17 +95,8 @@ footer p {
   margin: 0.5rem 0;
 }
 
-.socialmedia a {
-  margin: 0 8px;
-  text-decoration: none;
-}
-
-.socialmedia img {
+footer .sociallinks img {
   width: 30px;
+  margin: 0 8px;
   vertical-align: middle;
-  transition: transform 0.2s;
-}
-
-.socialmedia img:hover {
-  transform: scale(1.2);
 }
