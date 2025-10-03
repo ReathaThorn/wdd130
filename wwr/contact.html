@@ -1,84 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en-US">
 <head>
-    <title>Contact Us - [Your Rafting Company Name]</title>
-    <meta name="description" content="Contact us for booking or questions about our white water rafting trips. Find our location and contact information here.">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact us for booking or questions about our white water rafting trips. Find our location and contact information here.">
+  <meta name="author" content="Reatha Thorn">
+  <title>Contact Us – White Water Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Contact Our Team</h1>
+  <main>
+    <h1>Contact Our Team</h1>
 
-        <section class="contact-info">
-            <h2>Our Details</h2>
-            <p><strong>Address:</strong> [Your Company Address Here]</p>
-            <p><strong>Phone:</strong> [Your Primary Phone Number]</p>
-            <p><strong>Email:</strong> <a href="mailto:info@[yourcompany].com">info@[yourcompany].com</a></p>
+```
+<!-- Employee Images -->
+<section class="employees">
+  <h2>Meet Our Guides</h2>
+  <div class="employee-gallery">
+    <img src="images/employee1.jpg" alt="John Smith - Senior Rafting Guide">
+    <img src="images/employee2.jpg" alt="Sarah Johnson - Adventure Coordinator">
+    <img src="images/employee3.jpg" alt="Carlos Rivera - Safety Instructor">
+    <img src="images/employee4.jpg" alt="Emily Davis - Tour Manager">
+    <img src="images/employee5.jpg" alt="Michael Brown - Rafting Guide">
+    <img src="images/employee6.jpg" alt="Anna Wilson - Customer Support">
+    <img src="images/employee7.jpg" alt="David Lee - River Navigator">
+  </div>
+</section>
 
-            <div class="map-container">
-                <iframe src="[YOUR GOOGLE MAP EMBED URL]" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
+<!-- Contact Form -->
+<section class="contact-form">
+  <h2>Send Us a Message</h2>
+  <form>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
 
-        <section class="employee-grid">
-            <h2>Meet the Crew</h2>
-            <figure>
-                <img src="images/[employee1].jpg" alt="Photo of Employee 1">
-                <figcaption>Sarah - Lead Guide</figcaption>
-            </figure>
-            <figure>
-                <img src="images/[employee2].jpg" alt="Photo of Employee 2">
-                <figcaption>Mike - Reservations</figcaption>
-            </figure>
-            <figure>
-                <img src="images/[employee3].jpg" alt="Photo of Employee 3">
-                <figcaption>Jake - Operations</figcaption>
-            </figure>
-        </section>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-        <section class="contact-form-section">
-            <h2>Send Us a Message</h2>
-            <form action="thanks.html" method="get" class="contact-form">
-                <label for="username">Full Name:</label>
-                <input type="text" id="username" name="username" required>
-                
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="useremail" required>
+    <fieldset>
+      <legend>Preferred Trip Time</legend>
+      <label for="morning"><input type="radio" id="morning" name="trip_time" value="morning"> Morning</label>
+      <label for="afternoon"><input type="radio" id="afternoon" name="trip_time" value="afternoon"> Afternoon</label>
+      <label for="evening"><input type="radio" id="evening" name="trip_time" value="evening"> Evening</label>
+    </fieldset>
 
-                <label for="purpose">Message Purpose:</label>
-                <select id="purpose" name="purpose">
-                    <option value="" disabled selected>Select a Reason</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="reservation">Reservation Question</option>
-                    <option value="suggestion">Website Suggestion</option>
-                </select>
+    <label for="comments">Your Question:</label>
+    <textarea id="comments" name="comments" rows="4" required></textarea>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+    <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter"> Subscribe to our newsletter</label>
 
-                <div class="newsletter-checkbox">
-                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter.</label>
-                </div>
+    <button type="submit">Send Your Question</button>
+  </form>
+</section>
 
-                <button type="submit">Send Your Question</button>
-            </form>
-        </section>
-    </main>
+<!-- Google Map -->
+<section class="map">
+  <h2>Find Us Here</h2>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE" 
+    width="600" height="450" loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+```
 
-    <footer>
-        <p>© 2025 Rafting Company Name - [Your Name]</p>
-    </footer>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Rafting Adventures | Designed by Reatha Thorn</p>
+  </footer>
 </body>
 </html>
