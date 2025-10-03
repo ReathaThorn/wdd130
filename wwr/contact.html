@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us - [Your Rafting Company Name]</title>
+    <meta name="description" content="Contact us for booking or questions about our white water rafting trips. Find our location and contact information here.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Our Team</h1>
+
+        <section class="contact-info">
+            <h2>Our Details</h2>
+            <p><strong>Address:</strong> [Your Company Address Here]</p>
+            <p><strong>Phone:</strong> [Your Primary Phone Number]</p>
+            <p><strong>Email:</strong> <a href="mailto:info@[yourcompany].com">info@[yourcompany].com</a></p>
+
+            <div class="map-container">
+                <iframe src="[YOUR GOOGLE MAP EMBED URL]" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section class="employee-grid">
+            <h2>Meet the Crew</h2>
+            <figure>
+                <img src="images/[employee1].jpg" alt="Photo of Employee 1">
+                <figcaption>Sarah - Lead Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/[employee2].jpg" alt="Photo of Employee 2">
+                <figcaption>Mike - Reservations</figcaption>
+            </figure>
+            <figure>
+                <img src="images/[employee3].jpg" alt="Photo of Employee 3">
+                <figcaption>Jake - Operations</figcaption>
+            </figure>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form action="thanks.html" method="get" class="contact-form">
+                <label for="username">Full Name:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="useremail" required>
+
+                <label for="purpose">Message Purpose:</label>
+                <select id="purpose" name="purpose">
+                    <option value="" disabled selected>Select a Reason</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="reservation">Reservation Question</option>
+                    <option value="suggestion">Website Suggestion</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <div class="newsletter-checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter.</label>
+                </div>
+
+                <button type="submit">Send Your Question</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Rafting Company Name - [Your Name]</p>
+    </footer>
+</body>
+</html>
