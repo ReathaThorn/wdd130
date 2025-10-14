@@ -1,124 +1,185 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --primary: #004080;
+  --secondary: #e0f4ff;
+  --accent: #ffb400;
+  --text: #333;
+  --bg: #fff;
+  --max-width: 1200px;
 }
 
+/* General Styles */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.6;
-  color: #333;
-  background-color: #fff;
 }
 
-/* Header */
 header {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  align-items: center;
-  background: #0077b6;
+  background: var(--primary);
+  color: white;
   padding: 1rem;
+  text-align: center;
 }
 
-header .logo {
-  width: 100px;
+.logo {
+  width: 80px;
+  height: auto;
 }
 
 nav ul {
-  display: flex;
-  justify-content: flex-end;
   list-style: none;
-  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 1rem 0 0;
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: bold;
 }
 
 nav a:hover,
 nav a.active {
+  color: var(--accent);
   text-decoration: underline;
 }
 
-/* Hero */
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 2rem;
-}
-
-/* Sections */
 main {
-  padding: 2rem;
-}
-
-main h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-section h2 {
-  margin-bottom: 1rem;
-  color: #0077b6;
-}
-
-.history,
-.adventure {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  align-items: center;
-}
-
-.history img,
-.adventure img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* Gallery */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-}
-
-figcaption {
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-}
-
-/* Footer */
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #0077b6;
-  color: #fff;
+  max-width: var(--max-width);
+  margin: 0 auto;
   padding: 1rem;
 }
 
-.social-icons {
-  display: flex;
-  gap: 1rem;
+.hero {
+  position: relative;
+  text-align: center;
 }
 
-.social-icons img {
-  width: 30px;
+.hero img {
+  width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  margin-top: 1rem;
+  color: var(--primary);
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background: var(--secondary);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.newsletter input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.newsletter button {
+  background: var(--accent);
+  border: none;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter button:hover {
+  background: #e09b00;
+}
+
+/* Call to Action */
+.call-to-action,
+.trips-cta {
+  text-align: center;
+  background: var(--secondary);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  background: #e09b00;
+}
+
+/* Grid Content */
+.grid-content .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Trips Page */
+.trip-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.trip img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.trip-table th {
+  background: var(--primary);
+  color: white;
+}
+
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
